@@ -9,6 +9,7 @@ Created on Wed Apr 10 13:54:01 2019
 import dash
 from dash import html
 from dash import dcc
+from dash import dbc
 
 #Code to start an application
 app = dash.Dash()
@@ -22,7 +23,7 @@ app.layout = html.Div(children=[html.H1(children='Sample Dash Web App Dashboard'
                 html.Div(
                     [
                         html.P('Choose Item:'),
-                        dcc.Checklist(
+                        dbc.DropdownMenu(
                                 id = 'Item_List',
                                 options=[
                                     {'label': 'Bread', 'value': 'Bread'},
