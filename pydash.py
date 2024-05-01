@@ -7,8 +7,8 @@ Created on Wed Apr 10 13:54:01 2019
 
 # Import Necessary Libraries related to HTML tags and various core components like slider, checboxes, dropdowns etc.
 import dash
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import html
+from dash import dcc
 
 #Code to start an application
 app = dash.Dash()
